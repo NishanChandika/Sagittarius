@@ -1161,6 +1161,20 @@
         margin-bottom: 50px;
     }
 }
+.video-slide video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.video-slide .slide-content {
+    z-index: 1;
+    position: relative;
+}
     </style>
 </head>
 <body>
@@ -1201,41 +1215,58 @@
     <main>
         <section id="home" class="hero-slider">
             <div class="slider-container">
-                <div class="slide active" style="background-image: url('https://source.unsplash.com/1600x900/?water,technology');">
+                <!-- Slide 1 with Video Background -->
+                <div class="slide active video-slide">
+                    <video autoplay muted loop class="video-bg">
+                        <source src="images/1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                     <div class="slide-content">
                         <h1>Sagittarius</h1>
                         <p>Floating Self Navigating Robot for Water Quality Monitoring</p>
                         <a href="#project-scope" class="cta-button">Learn More</a>
                     </div>
                 </div>
-                <div class="slide" style="background-image: url('https://source.unsplash.com/1600x900/?robot,water');">
+        
+                <!-- Slide 2 -->
+                <div class="slide" style="background-image: url('images/robot.jpg');">
                     <div class="slide-content">
                         <i class="fas fa-robot"></i>
                         <h2>Autonomous Navigation</h2>
                         <p>Advanced AI-driven navigation for comprehensive water body coverage</p>
                     </div>
                 </div>
-                <div class="slide" style="background-image: url('https://source.unsplash.com/1600x900/?sensor,water');">
+        
+                <!-- Slide 3 
+                <div class="slide" style="background-image: url('./assets/images/water_monitoring.jpg');">
                     <div class="slide-content">
                         <i class="fas fa-tint"></i>
                         <h2>Real-time Monitoring</h2>
                         <p>Continuous measurement of critical water quality parameters</p>
                     </div>
-                </div>
-                <div class="slide" style="background-image: url('https://source.unsplash.com/1600x900/?solar,panel');">
+                </div>-->
+        
+                <!-- Slide 4 -->
+                <div class="slide active video-slide">
+                    <video autoplay muted loop class="video-bg">
+                        <source src="images/2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                     <div class="slide-content">
                         <i class="fas fa-solar-panel"></i>
                         <h2>Sustainable Operation</h2>
                         <p>Solar-powered for 24/7 uninterrupted monitoring</p>
                     </div>
                 </div>
-                <div class="slide" style="background-image: url('https://source.unsplash.com/1600x900/?data,analysis');">
+        
+                <!-- Slide 5 
+                <div class="slide" style="background-image: url('./assets/images/data_analytics.jpg');">
                     <div class="slide-content">
                         <i class="fas fa-chart-line"></i>
                         <h2>Data Analytics</h2>
                         <p>Advanced analytics for predictive water quality insights</p>
                     </div>
-                </div>
+                </div> -->
             </div>
             <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
             <button class="slider-nav next"><i class="fas fa-chevron-right"></i></button>
@@ -1570,7 +1601,7 @@
                     <h3><i class="fas fa-file-pdf"></i> Topic Assessment</h3>
                     <div class="download-info">
                         <span class="group-type">Group</span>
-                        <a href="#" class="download-link">Download</a>
+                        <a href="https://drive.google.com/file/d/1VTF2VxKQ5BEXMy2uIecMTz-stwAPNqPq/view?usp=sharing" class="download-link">Download</a>
                     </div>
                 </div>
                 
@@ -1578,31 +1609,31 @@
                     <h3><i class="fas fa-file-pdf"></i> Project Charter</h3>
                     <div class="download-info">
                         <span class="group-type">Group</span>
-                        <a href="#" class="download-link">Download</a>
+                        <a href="https://drive.google.com/file/d/1wwHxWY7AeBiUvSNLmnwWYvs0BwQooOa_/view?usp=sharing" class="download-link">Download</a>
                     </div>
                 </div>
                 
                 <div class="download-item">
                     <h3><i class="fas fa-file-pdf"></i> Project Proposal</h3>
                     <div class="download-info">
-                        <span class="group-type">Individual</span>
-                        <a href="#" class="download-link">Download</a>
+                        <span class="group-type">Group</span>
+                        <a href="https://drive.google.com/file/d/1NTlsydMECWRftEfLSEHSMr83hJhMw7md/view?usp=sharing" class="download-link">Download</a>
                     </div>
                 </div>
                 
                 <div class="download-item">
                     <h3><i class="fas fa-file-pdf"></i> Status Documents I</h3>
                     <div class="download-info">
-                        <span class="group-type">Individual</span>
-                        <a href="#" class="download-link">Download</a>
+                        <span class="group-type">Group</span>
+                        <a href="#https://drive.google.com/file/d/1iu5vEb68FicdSp47CwZHwQftjAY8ApLr/view?usp=sharing" class="download-link">Download</a>
                     </div>
                 </div>
                 
                 <div class="download-item">
                     <h3><i class="fas fa-file-pdf"></i> Status Documents II</h3>
                     <div class="download-info">
-                        <span class="group-type">Individual</span>
-                        <a href="#" class="download-link">Download</a>
+                        <span class="group-type">Group</span>
+                        <a href="https://drive.google.com/file/d/1SQN8Iz7gKa_ObM6OtMpTY6LhM09LaGqH/view?usp=sharing" class="download-link">Download</a>
                     </div>
                 </div>
                 
@@ -1610,7 +1641,7 @@
                     <h3><i class="fas fa-file-pdf"></i> Research Paper</h3>
                     <div class="download-info">
                         <span class="group-type">Group</span>
-                        <a href="#" class="download-link">Download</a>
+                        <a href="https://drive.google.com/file/d/1ZYRFjMofTuD6yDlaGISAHOURojjd_4Gt/view?usp=sharing" class="download-link">Download</a>
                     </div>
                 </div>
                 
@@ -1618,7 +1649,7 @@
                     <h3><i class="fas fa-file-pdf"></i> Final Report</h3>
                     <div class="download-info">
                         <span class="group-type">Group</span>
-                        <a href="#" class="download-link">Download</a>
+                        <a href="https://drive.google.com/file/d/1DG8GNyBWxIrgY7VYNws-Q1wKTC-j_aOJ/view?usp=sharing" class="download-link">Download</a>
                     </div>
                 </div>
                 
@@ -1626,7 +1657,7 @@
                     <h3><i class="fas fa-file-pdf"></i> Poster</h3>
                     <div class="download-info">
                         <span class="group-type">Group</span>
-                        <a href="#" class="download-link">Download</a>
+                        <span class="pending">Yet to be submitted, link will be updated soon.</span>
                     </div>
                 </div>
             </div>
@@ -1639,7 +1670,7 @@
                     <h3><i class="fas fa-file-powerpoint"></i> Project Proposal</h3>
                     <div class="download-info">
                         <span class="group-type">Group</span>
-                        <a href="#" class="download-link">Download</a>
+                        <a href="https://drive.google.com/file/d/1fzdSeJMSjLVKrdcypT_jCqZxhf_RnQDI/view?usp=sharing" class="download-link">Download</a>
                     </div>
                 </div>
                 
@@ -1647,7 +1678,7 @@
                     <h3><i class="fas fa-file-powerpoint"></i> Progress Presentation I</h3>
                     <div class="download-info">
                         <span class="group-type">Group</span>
-                        <a href="#" class="download-link">Download</a>
+                        <a href="https://docs.google.com/presentation/d/1IPnWtoDYFjxdlZgzbr_DC6NxxUxj06i3/edit?usp=sharing&ouid=118440807465694331172&rtpof=true&sd=true" class="download-link">Download</a>
                     </div>
                 </div>
                 
@@ -1655,7 +1686,7 @@
                     <h3><i class="fas fa-file-powerpoint"></i> Progress Presentation II</h3>
                     <div class="download-info">
                         <span class="group-type">Group</span>
-                        <a href="#" class="download-link">Download</a>
+                        <a href="https://docs.google.com/presentation/d/1KIaWmKASS7KZKxC7fKiQJxHtI9LJvY12/edit?usp=sharing&ouid=118440807465694331172&rtpof=true&sd=true" class="download-link">Download</a>
                     </div>
                 </div>
                 
@@ -1679,7 +1710,7 @@
                     <p class="institute">Sri Lanka Institute of Information Technology</p>
                     <p class="department">Department of Computer System Engineering</p>
                     <div class="contact-links">
-                        <a href="#" class="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/prof-anuradha-jayakody-19a42915/" class="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
                         <a href="mailto:anuradha.j@sliit.lk" class="email"><i class="fas fa-envelope"></i> E-Mail</a>
                     </div>
                 </div>
@@ -1690,7 +1721,7 @@
                     <p class="institute">Sri Lanka Institute of Information Technology</p>
                     <p class="department">Department of Computer System Engineering</p>
                     <div class="contact-links">
-                        <a href="#" class="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/narmada-dushmanthi/" class="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
                         <a href="mailto:narmada.g@sliit.lk" class="email"><i class="fas fa-envelope"></i> E-Mail</a>
                     </div>
                 </div>
@@ -1702,7 +1733,7 @@
                     <p class="institute">Sri Lanka Institute of Information Technology</p>
                     <p class="department">Department of Computer System Engineering</p>
                     <div class="contact-links">
-                        <a href="#" class="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/nishan-chandika/" class="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
                         <a href="mailto:it20176556@my.sliit.lk" class="email"><i class="fas fa-envelope"></i> E-Mail</a>
                     </div>
                 </div>
@@ -1714,7 +1745,7 @@
                     <p class="institute">Sri Lanka Institute of Information Technology</p>
                     <p class="department">Department of Computer System Engineering</p>
                     <div class="contact-links">
-                        <a href="#" class="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/menuka-bandara-b6078a207/" class="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
                         <a href="mailto:it21150616@my.sliit.lk" class="email"><i class="fas fa-envelope"></i> E-Mail</a>
                     </div>
                 </div>
@@ -1726,7 +1757,7 @@
                     <p class="institute">Sri Lanka Institute of Information Technology</p>
                     <p class="department">Department of Computer System Engineering</p>
                     <div class="contact-links">
-                        <a href="#" class="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/thaveesha-abeywarna-681b25283/" class="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
                         <a href="mailto:it21040344@my.sliit.lk" class="email"><i class="fas fa-envelope"></i> E-Mail</a>
                     </div>
                 </div>
@@ -1738,7 +1769,7 @@
                     <p class="institute">Sri Lanka Institute of Information Technology</p>
                     <p class="department">Department of Computer System Engineering</p>
                     <div class="contact-links">
-                        <a href="#" class="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/randheera-amarasinghe-32375a233/" class="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
                         <a href="mailto:it21131592@my.sliit.lk" class="email"><i class="fas fa-envelope"></i> E-Mail</a>
                     </div>
                 </div>
@@ -1752,7 +1783,7 @@
                     <p>Have questions about Sagittarius? We'd love to hear from you!</p>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
-                        <span>info@sagittarius.sliit.lk</span>
+                        <span>info@sagittarius.lk</span>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
